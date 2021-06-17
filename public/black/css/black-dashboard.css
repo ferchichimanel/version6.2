@@ -808,7 +808,10 @@ pre code {
   flex: 0 0 100%;
   max-width: 100%;
 }
-
+.col-20{
+  flex: 0 0 50%;
+  max-width: 50%;
+}
 .order-first {
   order: -1;
 }
@@ -11467,13 +11470,13 @@ fieldset[disabled] .btn-neutral.active {
 .show>.btn-neutral.dropdown-toggle:focus,
 .show>.btn-neutral.dropdown-toggle:hover {
   background-color: #ffffff;
-  color: #ba54f5;
+ /* color: #ba54f5;*/
   box-shadow: none;
 }
 
 .btn-neutral:hover,
 .btn-neutral:focus {
-  color: #ba54f5;
+  /*color: #ba54f5;*/
 }
 
 .btn-neutral:hover:not(.nav-link),
@@ -14013,7 +14016,7 @@ h6 {
 }
 
 a {
-  color: #ba54f5;
+  /*color: #ba54f5;*/
   font-weight: 300;
 }
 
@@ -14854,11 +14857,11 @@ table.tablesorter thead tr .headerSortDown {
 
 .sidebar,
 .off-canvas-sidebar {
-  background: #ba54f5;
+ /* background: #ba54f5;
   background: -webkit-linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
   background: -o-linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
   background: -moz-linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
-  background: linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
+  background: linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);*/
   height: calc(100vh - 90px);
   width: 230px;
   position: fixed;
@@ -15356,7 +15359,9 @@ table.tablesorter thead tr .headerSortDown {
   margin-bottom: 50px;
 }
 
-.perfect-scrollbar-on .sidebar,
+.perfect-scrollbar-on .sidebar{
+  background-color:#f4f5f7
+}
 .perfect-scrollbar-on .main-panel {
   height: 100%;
   max-height: 100%;
@@ -17303,6 +17308,7 @@ Copyright (c) 2015 Daniel Eden
 .card .card-header .card-title {
   color: #ffffff;
   font-weight: 100;
+     
 }
 
 .card .card-header .card-category {
@@ -17784,10 +17790,17 @@ Copyright (c) 2015 Daniel Eden
 .login-page .card-login {
     border-radius: 0.4285rem;
     padding-bottom: 0.7rem;
+    width: 500px;
+    margin-top: -60px;
+    align-content: center!;
+    margin-left: -150px;
 }
 
 .login-page .card-login.card-white .card-header .card-title {
   color: #ffffff;
+  margin-left: 20px;
+  margin-top: 20px;
+  
 }
 
 .login-page .card-login .card-header .card-title {
@@ -17811,6 +17824,7 @@ Copyright (c) 2015 Daniel Eden
 
 .login-page .card-login .input-group:last-child {
   margin-bottom: 40px;
+  
 }
 
 .login-page .link {
@@ -17822,6 +17836,7 @@ Copyright (c) 2015 Daniel Eden
   padding: 0 0 65px;
   overflow: hidden;
   z-index: 1;
+  
 }
 
 .card-register .form-check {
@@ -17906,8 +17921,8 @@ p, a, li,i::before,.table>tbody>tr>td,.table>thead>tr>th{
 .sidebar-wrapper.ps,.card ,.table>tbody>tr>td a{
 background: white!important;
 }
-.main-panel>.content,.main-panel {
-  background:rgb(169,208,245)!important
+.main-panel.content,{
+  background:rgb(169,208,245)
 }
 .btn-primary,.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active:focus, .btn-primary.active:hover{
   background:#1977cc!important;
@@ -17922,4 +17937,154 @@ color: white!important;
 }
 .table>tbody>tr {
   border-top: 2px solid grey;
+}
+.main-panel {
+    background: #edf0f3;
+    width: 1500px;
+}
+body{
+  background-color: #f1f4f8 !important;
+}
+.sidebar .logo, .off-canvas-sidebar .logo {
+  background-color: #f1f4f8;
+}
+.logo{
+  background-color:#f1f4f8;
+}
+.form-control {
+color: #3358f4;
+}
+.card .card-header {
+  color: #3358f4;
+}
+.textarea {
+  background-color:#3358f4;
+}
+.card h1, .card h2, .card h3, .card h4, .card h5, .card h6, .card p {
+  color: #3358f4;
+}
+.card .card-header .card-title {
+  color: #3358f4;
+  font-weight: 100;
+}
+.col-md-10 {
+  min-width: 800px;
+}
+form.example input[type=text] {
+  padding: 5px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 5px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+form.example input[type=text] {
+  padding: 5px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 5px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+form.example input[type=text]{
+  background: transparent!important;
+  border-right: none;
+}
+form.example .fa-search:before{
+  color:white!important;
+}
+.card-body{
+  text-align: center;
+}
+.card-body{
+  text-align: left;
+}
+.card-header,.card-header h4,.card-header h6{
+  font-size: 1rem!important;
+  font-weight: 500!important;
+  cursor: pointer!important;
+}
+td a{
+  padding: 10px!important;
+}
+.card{
+  min-height: 500px;
+}
+
+
+.sidebar, .off-canvas-sidebar {
+  height: calc(100vh - 90px);
+  width: 230px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 60%);
+  margin-top: 50px;
+  margin-left: 20px;
+  border-radius: 5px;
+  transition: 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+}
+.card-chart .card-body1 {
+  margin-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.content {
+  background-color: #f4f5f7!important;
+  color: #f4f5f7!important;
+}
+.card .card-login{
+  width: 500px!important;
+  margin-top: -60px!important;
+  align-content: center!important;
+  margin-left: -150px!important;
 }

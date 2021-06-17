@@ -20,6 +20,18 @@
         <link href="{{ asset('black') }}/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
         <link href="{{ asset('black') }}/css/theme.css" rel="stylesheet" />
         <link href="{{ asset('black') }}/css/custum.css" rel="stylesheet" />
+        <style>
+        body {
+            margin: 0 auto;
+            display: table;
+        }
+        .voronoi path {
+            fill: #fff;
+            stroke: #000;
+            stroke-width: 1px;
+        }
+    
+    </style>
     </head>
     <body class="{{ $class ?? '' }}">
         @auth()
@@ -89,6 +101,8 @@
         <script src="https://d3js.org/d3.v4.js"></script>
 
         <script src="https://d3js.org/d3-contour.v1.min.js"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+
         @stack('js')
 
         <script>

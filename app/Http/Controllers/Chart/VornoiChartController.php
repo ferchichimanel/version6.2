@@ -9,11 +9,11 @@ use Illuminate\Support\Facades\DB;
 class VornoiChartController extends Controller
 {
     public function data() {
-        $data = DB::connection('look4care')->table('cite')->select(['lng', 'lat'])
+        $datas = DB::connection('look4care')->table('patient')->select(['longitude', 'latitude'])
         ->get()->map(function($e) {
-            return [floatval($e->lat), floatval($e->lng)];
+            return ["x" => floatval($e->latitude), "y" => floatval($e->longitude)];
         })->toArray();
 
-        return $data;
+        return $datas;
     }
 }

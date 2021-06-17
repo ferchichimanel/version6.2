@@ -12,7 +12,7 @@
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label for="titre">Titre</label>
-                                    <input class="form-control" id="titre" name="titre" type="text" placeholder="Nom categorie">
+                                    <input class="form-control" id="titre" name="titre" type="text" placeholder="Titre de l'article">
                                 </div>
                             </div>
                         </div>

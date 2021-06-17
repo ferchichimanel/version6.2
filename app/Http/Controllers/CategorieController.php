@@ -31,7 +31,8 @@ class CategorieController extends Controller
         ]);
 
         Categorie::create([
-            'nom' => $request->nom
+            'nom' => $request->nom ,
+            
         ]);
 
         return redirect()->route('home');
